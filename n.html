@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    /* Ajustement du container pour 3 robes par ligne */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 40px;
+    }
+
+    .robe {
+        width: 30%; /* Ajustement pour afficher 3 robes par ligne */
+        margin: 10px 0; /* Espacement équilibré */
+        background-color: #fff;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        animation: fadeInUp 1s forwards;
+    }
+
+    .robe img {
+        width: 100%;
+        height: 200px; /* Réduction de la hauteur des images */
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Style pour la section d'introduction */
+    .intro {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 100px;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Playfair Display', cursive;
+        font-size: 28px;
+        color: #333;
+        line-height: 1.8;
+        font-weight: 300;
+        letter-spacing: 1px;
+        opacity: 0;
+        animation: fadeInText 2s ease-out forwards;
+    }
+
+    /* Responsive: pour les petits écrans, 2 par ligne puis 1 seule */
+    @media (max-width: 1024px) {
+        .robe {
+            width: 45%; /* 2 robes par ligne */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .robe {
+            width: 100%; /* 1 robe par ligne */
+        }
+    }
+
+</style>
+<body>
+</head>
+<body>
+
+<header>
+    <h1> Notre Robes de Mariée </h1>
+</header>
+
+<!-- Section Introduction avec texte animé -->
+<div class="intro">
+    <p>Découvrez notre collection de robes de mariée, alliant élégance, confort et raffinement. Que vous préfériez une coupe classique, bohème ou princesse, chaque robe est conçue pour sublimer votre silhouette et rendre votre jour J inoubliable.</p>
+</div>
+
+<div class="container">
+    <!-- Robe 1 -->
+    <div class="robe">
+        <img src="H.jPG" alt="Robe Élégante">
+        <h2>Robe Élégance</h2>
+        <p>Une robe de mariée romantique avec des détails en dentelle et une coupe fluide .</p>
+        <p class="prix">Prix : 1 500€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+
+    <!-- Robe 2 -->
+    <div class="robe">
+        <img src="we.png" alt="Robe Classique">
+        <h2>Robe Classique</h2>
+        <p>Une robe intemporelle, élégante et simple, avec une coupe fluide et un décolleté en V subtil.</p>
+        <p class="prix">Prix : 1 800€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+
+    <!-- Robe 3 -->
+    <div class="robe">
+        <img src="B.jPG" alt="Robe Princesse">
+        <h2>Robe Princesse</h2>
+        <p>Une robe spectaculaire avec une longue traîne et des détails brillants pour un look féérique.</p>
+        <p class="prix">Prix : 2 200€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+
+    <!-- Robe 4 -->
+    <div class="robe">
+        <img src="A.jPG" alt="Robe Bohème">
+        <h2>Robe Elégance</h2>
+        <p>Une robe de mariée romantique avec des détails en dentelle et une coupe fluide parfaite pour les grandes occasio.</p>
+        <p class="prix">Prix : 1 200€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+
+    <div class="robe">
+        <img src="D.jpg" alt="Robe Bohème">
+        <h2>Robe Bohème</h2>
+        <p>Une robe siréne élegant, avec des manches longues et des estrasses.</p>
+        <p class="prix">Prix : 900€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+    <div class="robe">
+        <img src="C.jpg" alt="Robe Bohème">
+        <h2>Robe Bohème</h2>
+        <p>Une robe siréne élegant, avec des manches longues et des estrasses.</p>
+        <p class="prix">Prix : 900€</p>
+        <a href="#" class="btn">Voir Détails</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Boutique de Robes de Mariée. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+URW Chancery L, cursive, serif;
